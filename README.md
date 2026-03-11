@@ -1,0 +1,58 @@
+# FluoCLIP
+
+This repository is the official PyTorch implementation of "FluoCLIP: Stain-Aware Focus Quality Assessment in Fluorescence Microscopy", accepted at CVPR 2026.
+
+## Overview
+
+Focus Quality Assessment (FQA) in fluorescence microscopy is often biased by the specific stain (fluorophore) used in the imaging process. 
+FluoCLIP addresses this by introducing a stain-aware framework that leverages the vision-language prior of CLIP to achieve robust and generalizable focus assessment across diverse staining conditions.
+
+## Key Contributions
+
+FluoCLIP: A two-stage ordinal vision–language framework that learns stain-specific grounding and stain-guided ranking for robust FQA.
+
+FluoMix: A novel dataset featuring diverse fluorescent stains and tissue-level focus variations.
+
+## Environment Settings
+All experiments were executed on a single 3090 GPU.
+
+### Clone repository
+```
+git clone https://github.com/FluoCLIP/FluoCLIP.git
+```
+
+### Create conda environment
+```
+conda env create -f env.yml
+pip install -e .
+```
+
+### Install CLIP
+```
+cd CLIP
+pip install -e .
+cd ..
+```
+
+### Run Code
+```
+python scripts/run.py --config config.yaml
+```
+
+## Acknowledgement
+
+Many thanks to the following repositories
+
+- [OrdinalCLIP](https://github.com/xk-huang/OrdinalCLIP)
+- [CLIP](https://github.com/openai/CLIP)
+
+## Citation
+If you find our paper interesting, please cite
+```
+@article{park2026fluoclip,
+  title={FluoCLIP: Stain-Aware Focus Quality Assessment in Fluorescence Microscopy},
+  author={Park, Hyejin and Yoon, Jiwon and Park, Sumin and Kim, Suree and Jang, Sinae and Lee, Eunsoo and Kang, Dongmin and Min, Dongbo},
+  journal={arXiv preprint arXiv:2602.23791},
+  year={2026}
+}
+```
