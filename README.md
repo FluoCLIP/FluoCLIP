@@ -1,8 +1,15 @@
-# FluoCLIP 
+# [CVPR 2026 Highlight] :microscope: FluoCLIP: Stain-Aware Focus Quality Assessment in Fluorescence Microscopy
 
 This repository is the official PyTorch implementation of ["FluoCLIP: Stain-Aware Focus Quality Assessment in Fluorescence Microscopy"](https://arxiv.org/abs/2602.23791), accepted at CVPR 2026.
 
 For more information, please check our [Project Page](https://fluoclip.github.io/)
+
+## News and TODO
+- [ ] Release on Hugging Face.
+- [ ] Update dataset.
+- [x] 2026.04: We are happy to announce that FluoCLIP is accepted as a Highlight in CVPR 2026!
+- [x] 2026.03: Source code is released.
+- [x] 2026.02: We are happy to announce that FluoCLIP is accepted at CVPR 2026!
 
 ## Environment Settings
 All experiments were executed on a single 3090 GPU.
